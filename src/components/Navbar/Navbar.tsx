@@ -30,7 +30,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-300 hover:bg-white hover:bg-opacity-10 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                  className="text-gray-300 hover:bg-white hover:bg-opacity-10 hover:text-white px-4 py-3 rounded-md text-base font-medium transition-colors duration-300"
                 >
                   {item.name}
                 </Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:bg-white hover:bg-opacity-10 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+                className="text-gray-300 hover:bg-white hover:bg-opacity-10 hover:text-white block px-4 py-3 rounded-md text-lg font-medium transition-colors duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
