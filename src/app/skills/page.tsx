@@ -1,8 +1,9 @@
+import Skills from '@/components/Skills/Skills'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>skills page</div>
+    <Skills/>
   )
 }
 

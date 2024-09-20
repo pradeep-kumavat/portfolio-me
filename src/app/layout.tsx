@@ -1,18 +1,18 @@
 "use client";
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Josefin_Sans } from "@next/font/google";
+import { Josefin_Sans } from "next/font/google";
 import Head from "next/head";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-
 import { useState, useEffect } from "react";
 
 const josefinSans = Josefin_Sans({
-  weight: "400", // Regular 400 weight
-  subsets: ["latin"], // Define the subset, e.g., 'latin'
-  display: "swap", // Optional for better font rendering performance
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export default function RootLayout({
@@ -21,8 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
   useEffect(() => {
-    const handleMouseMove = (event: any) => {
+    const handleMouseMove = (event: MouseEvent) => {
       setCursorPosition({ x: event.clientX, y: event.clientY });
     };
     window.addEventListener("mousemove", handleMouseMove);
@@ -32,13 +33,13 @@ export default function RootLayout({
   }, []);
 
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <Head>
         <title>Pradeep Kumavat - Portfolio</title>
         <meta name="description" content="Portfolio website" />
       </Head>
-      <body className={josefinSans.className}>
-        <div className="relative w-full h-screen overflow-auto">
+      <body className={`${josefinSans.className} overflow-x-hidden`}>
+        <div className="relative min-h-screen flex flex-col">
           {/* Custom Cursor */}
           <div
             className="fixed z-[9999] w-4 h-4 rounded-full bg-white shadow-lg shadow-white/50 transition-transform duration-300 ease-out pointer-events-none"
@@ -47,10 +48,11 @@ export default function RootLayout({
             }}
           />
           
-          {/* Page Content */}
-          <div className="relative z-[1]">
+          <div className="flex-grow flex flex-col">
             <Navbar />
-            {children}
+            <main className="flex-grow">
+              {children}
+            </main>
             <Footer />
           </div>
         </div>

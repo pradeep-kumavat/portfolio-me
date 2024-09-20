@@ -1,9 +1,14 @@
-import React from 'react'
+"use client"
+import Education from "@/components/Education/Education";
 
-const page = () => {
+
+export default function Home() {
   return (
-    <div>education page</div>
-  )
+    <>
+     <div>
+      <Education/>
+    </div>
+    </>
+  );
 }
-
-export default page
+ 
