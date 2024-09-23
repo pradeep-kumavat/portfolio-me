@@ -5,10 +5,12 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 export default function Contact() {
   return (
-    <div className='bg-gray-950 min-h-screen flex items-center justify-center'>
+    <BackgroundBeamsWithCollision>
+    <div className='bg-gray-950 min-h-screen flex items-center justify-center w-full'>
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl py-12 md:py-20 text-white px-4 md:px-6"
         initial={{ opacity: 0, y: 50 }}
@@ -57,6 +59,7 @@ export default function Contact() {
         </motion.div>
       </motion.div>
     </div>
+    </BackgroundBeamsWithCollision>
   )
 }
 
