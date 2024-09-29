@@ -6,8 +6,15 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import { useState } from 'react'
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  })
+  
   return (
     <BackgroundBeamsWithCollision>
     <div className='bg-gray-950 min-h-screen flex items-center justify-center w-full'>
@@ -37,20 +44,24 @@ export default function Contact() {
           exit={{ opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.5 }}
         >
-          <form className="space-y-6">
+          <form  className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-white text-base">Name</Label>
-                <Input id="name" placeholder="Enter your name" className="bg-dark-blue text-black border border-[#E6B9A6] text-base py-2 px-3" />
+                <Input value={formData.name}
+                     name='Name' id="name" placeholder="Enter your name" className="bg-dark-blue text-black border border-[#E6B9A6] text-base py-2 px-3" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-white text-base">Email</Label>
-                <Input id="email" type="email" placeholder="Enter your email" className="bg-dark-blue text-black border border-[#E6B9A6] text-base py-2 px-3" />
+                <Input value={formData.email}
+                     name='Email' id="email" type="email" placeholder="Enter your email" className="bg-dark-blue text-black border border-[#E6B9A6] text-base py-2 px-3" />
               </div>
             </div>
             <div className="space-y-2">
               <Label htmlFor="message" className="text-white text-base">Message</Label>
-              <Textarea id="message" placeholder="Enter your message" rows={5} className="bg-dark-blue text-black border border-[#E6B9A6] text-base py-2 px-3" />
+              <Textarea 
+                  value={formData.message}
+                   name='Message' id="message" placeholder="Enter your message" rows={5} className="bg-dark-blue text-black border border-[#E6B9A6] text-base py-2 px-3" />
             </div>
             <Button type="submit" className="w-full bg-[#E6B9A6] hover:bg-[#E6B9A6] text-black text-lg py-3">
               Submit
