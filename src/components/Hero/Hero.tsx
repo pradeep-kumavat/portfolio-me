@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <motion.div 
-              className="inline-block bg-green-400 text-black font-semibold px-3 py-1 rounded-xl text-xs mb-4"
+              className="inline-block bg-[#E6B9A6] text-black font-semibold px-3 py-1 rounded-xl text-xs mb-4"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.4 }}
@@ -25,7 +25,7 @@ export default function Hero() {
               transition={{ duration: 0.4, delay: 0.3 }}
             >
               Hi, I am <br />
-              <span className="text-green-400">
+              <span className="text-green-400" style={{ color: '#E6B9A6' }}>
                 <ReactTyped 
                   strings={['Pradeep Kumavat']} 
                   typeSpeed={100}
@@ -33,7 +33,7 @@ export default function Hero() {
                   loop={true}
                 />
               </span>
-            </motion.h1>
+            </motion.h1> 
           </div>
 
           <div className="relative flex justify-center">

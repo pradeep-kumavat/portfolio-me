@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="mb-6">
           <h2 className="text-3xl font-bold mb-3">
-            Let's Connect with<span className="text-green-400"> me</span>.
+            Let's Connect with<span className="text-[#E6B9A6]"> me</span>.
           </h2>
           <p className="text-lg">
-            Start by <Link href="/contact" className="text-green-400 hover:underline">saying hi</Link>
+            Start by <Link href="/contact" className="text-[#E6B9A6] hover:underline">saying hi</Link>
           </p>
         </div>
         
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
         
         <div className="text-center text-xs text-gray-400 mt-6">
-          Powered with ❤️ by <Link href="#" className="text-green-400 hover:underline">Pradeep Kumavat</Link>
+          Powered with ❤️ by <Link href="#" className="text-[#E6B9A6] hover:underline">Pradeep Kumavat</Link>
         </div>
       </div>
     </footer>

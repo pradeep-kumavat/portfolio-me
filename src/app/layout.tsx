@@ -9,11 +9,12 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import { useState, useEffect } from "react";
 
+
 const josefinSans = Josefin_Sans({
-  weight: "400",
   subsets: ["latin"],
   display: "swap",
-});
+  variable: "--font-josefin-sans",
+})
 
 export default function RootLayout({
   children,
@@ -33,7 +34,7 @@ export default function RootLayout({
   }, []);
 
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang="en" className={`${josefinSans.variable} font-sans overflow-x-hidden`}>
       <Head>
         <title>Pradeep Kumavat - Portfolio</title>
         <meta name="description" content="Portfolio website" />
