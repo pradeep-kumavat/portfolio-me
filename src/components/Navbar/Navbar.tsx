@@ -16,8 +16,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="navbar-glassmorphism sticky top-0 z-50 bg-gray-950 bg-opacity-70 backdrop-blur-[16.5px] rounded-b-[10px] border border-white border-opacity-10 shadow-[0_8px_32px_0_rgba(8,8,8,0.37)]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="navbar-glassmorphism sticky top-0 z-50 bg-gray-950 bg-opacity-100 backdrop-blur-[16.5px]  border-opacity-89 shadow-[0_8px_32px_0_rgba(8,8,8,0.37)]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-950 border border-white border-opacity-10">
         <div className="flex items-center justify-between h-14">
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl font-bold text-white">
