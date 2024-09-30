@@ -14,14 +14,15 @@ export default function Education() {
           <p className="text-gray-300 text-sm md:text-base font-normal mb-4">
             Shri Vaishnav Vidhyapeeth Vishwavidyalaya, Indore
           </p>
-          <div className="w-full"> 
-            <Image
-              src="/images/svvv.png"
-              alt="College photo"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-20 md:h-32 lg:h-44 w-full"
-            />
+          <div className="w-full flex justify-start"> 
+            <div className="w-40 h-20 md:w-48 md:h-32 lg:w-56 lg:h-44 relative">
+              <Image
+                src="/images/svvv.png"
+                alt="College photo"
+                fill
+                className="rounded-lg object-contain"
+              />
+            </div>
           </div>
         </div>
       ),
@@ -36,14 +37,15 @@ export default function Education() {
           <p className="text-gray-300 text-sm md:text-base font-normal mb-4">
             The New Era Public School, Indore
           </p> 
-          <div className="w-full">
-            <Image
-              src="/images/school2.png"
-              alt="12th grade school"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-20 md:h-32 lg:h-44 w-full"
-            />
+          <div className="w-full flex justify-start">
+            <div className="w-40 h-20 md:w-48 md:h-32 lg:w-56 lg:h-44 relative">
+              <Image
+                src="/images/school2.png"
+                alt="12th grade school"
+                fill
+                className="rounded-lg object-contain"
+              />
+            </div>
           </div>
         </div>
       ),
@@ -58,14 +60,15 @@ export default function Education() {
           <p className="text-gray-300 text-sm md:text-base font-normal mb-4">
             Infant Jesus School, Indore
           </p>
-          <div className="w-full">
-            <Image
-              src="/images/school1.png"
-              alt="10th grade school"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-20 md:h-32 lg:h-44 w-full"
-            />
+          <div className="w-full flex justify-start">
+            <div className="w-40 h-20 md:w-48 md:h-32 lg:w-56 lg:h-44 relative">
+              <Image
+                src="/images/school1.png"
+                alt="10th grade school"
+                fill
+                className="rounded-lg object-contain"
+              />
+            </div>
           </div>
         </div>
       ),
