@@ -52,7 +52,7 @@ export default function Contact() {
                     name='Name' 
                     id="name" 
                     placeholder="Enter your name" 
-                    className="bg-gray-800/50 text-white border-[#E6B9A6] focus:border-[#E6B9A6] focus:ring-[#E6B9A6] text-base py-3 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-gray-800/70 focus:bg-gray-800/70" 
+                    className="bg-gray-800/50 text-white border-[#dfa187] focus:border-[#dfa187] focus:ring-[#dfa187] text-base py-3 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-gray-800/70 focus:bg-gray-800/70" 
                   />
                 </div>
                 <div className="space-y-2">
@@ -64,7 +64,7 @@ export default function Contact() {
                     id="email" 
                     type="email" 
                     placeholder="Enter your email" 
-                    className="bg-gray-800/50 text-white border-[#E6B9A6] focus:border-[#E6B9A6] focus:ring-[#E6B9A6] text-base py-3 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-gray-800/70 focus:bg-gray-800/70" 
+                    className="bg-gray-800/50 text-white border-[#dfa187] focus:border-[#dfa187] focus:ring-[#dfa187] text-base py-3 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-gray-800/70 focus:bg-gray-800/70" 
                   />
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function Contact() {
                   id="message" 
                   placeholder="Enter your message" 
                   rows={5} 
-                  className="bg-gray-800/50 text-white border-[#E6B9A6] focus:border-[#E6B9A6] focus:ring-[#E6B9A6] text-base py-3 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-gray-800/70 focus:bg-gray-800/70 resize-none" 
+                  className="bg-gray-800/50 text-white border-[#dfa187] focus:border-[#dfa187] focus:ring-[#dfa187] text-base py-3 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-gray-800/70 focus:bg-gray-800/70 resize-none" 
                 />
               </div>
               <Button 

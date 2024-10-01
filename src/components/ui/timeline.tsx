@@ -41,9 +41,6 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="text-2xl md:text-4xl mb-4 text-[#E6B9A6] dark:text-white max-w-4xl font-bold">
           Education
         </h2>
-        <p className="text-white dark:text-white-300 text-sm md:text-base max-w-4xl">
-        Hello everyone , I'm Pradeep Kumavat, a full-stack web developer experince in MERN stack and along with Next.js and typescript for building modern, scalable applications as well as  possess strong skills in Data Structures and Algorithms (DSA) also . I'm passionate about coding and constantly learning new technologies, and enjoy working on innovative projects that solve real-world problems."
-        </p>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
