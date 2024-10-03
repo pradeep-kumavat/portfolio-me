@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="mb-6">
           <h2 className="text-3xl font-bold mb-3">
-            Let's Connect with<span className="text-[#E6B9A6]"> me</span>.
+            Let&apos;s Connect with<span className="text-[#E6B9A6]"> me</span>.
           </h2>
           <p className="text-lg">
             Start by <Link href="/contact" className="text-[#E6B9A6] hover:underline">saying hi</Link>
