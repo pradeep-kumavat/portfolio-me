@@ -1,30 +1,9 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Code, Lightbulb } from 'lucide-react'
+"use client";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Code, Lightbulb } from 'lucide-react';
 import Image from "next/image";
-import { useEffect } from 'react'
-import ScrollReveal from 'scrollreveal'
 
 export default function About() {
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const sr = ScrollReveal({
-        origin: 'bottom',
-        distance: '20px',
-        duration: 600,
-        delay: 200,
-        opacity: 0,
-        scale: 0.9,
-        easing: 'ease-out',
-      });
- 
-      // Reveal the elements
-      sr.reveal('.reveal', {
-        interval: 100, // Delay between each element's reveal
-      });
-    }
-  }, []);
-
   return (
     <div className="bg-gray-950 min-h-screen text-white py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,7 +20,7 @@ export default function About() {
 
           <div className="w-full lg:w-2/3 space-y-8">
             <div className="space-y-6">
-              <section className="reveal">
+              <section className="">
                 <h2 className="text-2xl font-semibold mb-3 flex items-center">
                   <Code className="mr-2 text-[#E6B9A6]" /> About Me
                 </h2>
@@ -50,7 +29,7 @@ export default function About() {
                 </p>
               </section>
 
-              <section className="reveal">
+              <section className="">
                 <h2 className="text-2xl font-semibold mb-3 flex items-center">
                   <Lightbulb className="mr-2 text-[#E6B9A6]" /> My Approach
                 </h2>
@@ -59,7 +38,7 @@ export default function About() {
                 </p>
               </section>
 
-              <section className="reveal">
+              <section className="">
                 <h2 className="text-2xl font-semibold mb-3">What I Offer</h2>
                 <ul className="list-disc list-inside text-gray-300 space-y-2">
                   <li>Responsive and mobile-first web design</li>
@@ -71,7 +50,7 @@ export default function About() {
               </section>
             </div>
 
-            <div className="pt-6 reveal">
+            <div className="pt-6 ">
               <Button className="bg-[#E6B9A6] text-gray-900 hover:bg-[#d9a08e]">
                 <a className="flex items-center" href="/projects">View My Projects <ArrowRight className="ml-2 h-4 w-4 " /></a>
               </Button>
@@ -80,5 +59,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }
