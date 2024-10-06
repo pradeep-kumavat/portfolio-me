@@ -4,12 +4,13 @@ import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { toast } from 'react-hot-toast'
+import toast, { Toaster } from 'react-hot-toast';
 
 
 export default function Contact() {
+  const [loading , setloading] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,16 +19,31 @@ export default function Contact() {
 
   const onSend = async()=>{
     try {
-      const response = await axios.post("/api/send-msg",formData)
-      console.log("signup success", response.data)
-      toast.success("Send message successfully")
-    } catch (error:any) {
-      console.error("Signup failed ",error);
-      toast.error("Failed to send message") 
+      if (!formData.name || !formData.email || !formData.message) {
+        toast.error("All fields are required");
+        return;
+      }
+      if(!loading){
+        const toastId = toast.loading("Sending message...")
+        const response = await axios.post("/api/send-msg",formData)
+        toast.dismiss(toastId);
+        toast.success("Send message successfully")
+        setFormData({name: '', email: '', message: ''})
+      }
+    } catch(error:any) {
+        toast.error("Failed to send message") 
+        setFormData({name: '', email: '', message: ''})
     }
   }
 
-
+  useEffect(()=>{
+    if(formData.email.length >= 0 && formData.name.length >=0 && formData.message.length >=0){
+      setloading(false)
+    }
+    else{
+      setloading(true)
+    }
+    },[formData])
   
   return (
     <div className='bg-gray-950 min-h-screen flex items-center justify-center w-full px-4 py-16 sm:px-6 lg:px-8'>
@@ -93,6 +109,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+            <Toaster />
     </div>
   )
 }

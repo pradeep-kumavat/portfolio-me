@@ -3,12 +3,10 @@ import ContactFormEmail from '@/emails/emailTemp';
 import { NextRequest, NextResponse } from 'next/server';
 import { render } from '@react-email/render';
 
-export default async function POST(req:NextRequest) {
+export async function POST(req:NextRequest) {
     try {
 
     const { name, email, message } = await req.json();
-    console.log(name, email, message);
-
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         secure: true,
@@ -22,8 +20,8 @@ export default async function POST(req:NextRequest) {
       const emailTemplate = await render(<ContactFormEmail name={name} email={email} message={message}/>);
 
       const info = await transporter.sendMail({
-        from: process.env.EMAIL_USER , 
-        to: email, 
+        from: process.env.EMAIL_USER ,
+        to: process.env.EMAIL_USER,
         subject: "Message Received from Portfolio", 
         html: emailTemplate, 
       });
