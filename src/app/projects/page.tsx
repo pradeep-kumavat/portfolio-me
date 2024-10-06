@@ -4,7 +4,7 @@ import React from 'react'
 export const metadata = {
   title: {
     absolute: "",
-    default: "Pradeep Kumavat Portfolio",
+    default: "Pradeep Kumavat",
     template: "Pradeep Kumavat Portfolio",
   },
   description: "Welcome to the Projects page",

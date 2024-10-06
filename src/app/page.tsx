@@ -4,7 +4,7 @@ import Hero from '@/components/Hero/Hero'
 export const metadata = {
   title: {
     absolute: "",
-    default: "Pradeep Kumavat Portfolio",
+    default: "Pradeep Kumavat",
     template: "Pradeep Kumavat Portfolio",
   },
   description: "Welcome to the home page",
