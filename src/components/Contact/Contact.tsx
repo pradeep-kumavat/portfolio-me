@@ -5,6 +5,8 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { useState } from 'react'
+import axios from 'axios'
+import { toast } from 'react-hot-toast'
 
 
 export default function Contact() {
@@ -13,6 +15,17 @@ export default function Contact() {
     email: '',
     message: ''
   })
+
+  const onSend = async()=>{
+    try {
+      const response = await axios.post("/api/send-msg",formData)
+      console.log("signup success", response.data)
+      toast.success("Send message successfully")
+    } catch (error:any) {
+      console.error("Signup failed ",error);
+      toast.error("Failed to send message") 
+    }
+  }
 
 
   
@@ -32,7 +45,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="bg-white/10 p-8 lg:p-12 rounded-2xl animate-fade-in-scale">
-          <form className="space-y-6">
+          <div className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-white text-sm font-medium">Name</Label>
@@ -72,11 +85,12 @@ export default function Contact() {
             </div>
             <Button 
               type="submit" 
+              onClick={onSend}
               className="w-full bg-[#E6B9A6] hover:bg-[#d9a08e] text-gray-900 font-semibold text-lg py-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#E6B9A6] focus:ring-opacity-50"
             >
               Send Message
             </Button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
