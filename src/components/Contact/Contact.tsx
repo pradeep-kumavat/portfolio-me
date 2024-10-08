@@ -6,48 +6,44 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import toast, { Toaster } from 'react-hot-toast';
-
+import toast, { Toaster } from 'react-hot-toast'
+import { Boxes } from '../ui/background-boxes'
 
 export default function Contact() {
-  const [loading , setloading] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   })
 
-  const onSend = async()=>{
+  const onSend = async () => {
     try {
       if (!formData.name || !formData.email || !formData.message) {
-        toast.error("All fields are required");
-        return;
+        toast.error("All fields are required")
+        return
       }
-      if(!loading){
+      if (!loading) {
         const toastId = toast.loading("Sending message...")
-        const response = await axios.post("/api/send-msg",formData)
-        toast.dismiss(toastId);
-        toast.success("Send message successfully")
-        setFormData({name: '', email: '', message: ''})
+        const response = await axios.post("/api/send-msg", formData)
+        toast.dismiss(toastId)
+        toast.success("Message sent successfully")
+        setFormData({ name: '', email: '', message: '' })
       }
-    } catch(error:any) {
-        toast.error("Failed to send message") 
-        setFormData({name: '', email: '', message: ''})
+    } catch (error: any) {
+      toast.error("Failed to send message")
+      setFormData({ name: '', email: '', message: '' })
     }
   }
 
-  useEffect(()=>{
-    if(formData.email.length >= 0 && formData.name.length >=0 && formData.message.length >=0){
-      setloading(false)
-    }
-    else{
-      setloading(true)
-    }
-    },[formData])
-  
+  useEffect(() => {
+    setLoading(!(formData.email.length > 0 && formData.name.length > 0 && formData.message.length > 0))
+  }, [formData])
+
   return (
-    <div className='bg-gray-950 min-h-screen flex items-center justify-center w-full px-4 py-16 sm:px-6 lg:px-8'>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full max-w-6xl bg-gray-900/50 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden animate-fade-in-slide">
+    <div className="relative bg-gray-950 min-h-screen flex items-center justify-center w-full px-4 py-16 sm:px-6 lg:px-8 overflow-hidden">
+        <Boxes />
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 w-full max-w-6xl bg-gray-900/80 backdrop-blur-lg rounded-2xl shadow-2xl overflow-hidden animate-fade-in-slide">
         <div className="space-y-6 p-8 lg:p-12 flex flex-col justify-center">
           <h2 className="text-4xl font-bold text-white animate-fade-in">Get in Touch</h2>
           <p className="text-lg text-[#E6B9A6] animate-fade-in">
@@ -109,7 +105,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-            <Toaster />
+      <Toaster />
     </div>
   )
 }
@@ -151,30 +147,3 @@ function MailIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-
-// CSS Animations
-const styles = `
-  @keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @keyframes fade-in-slide {
-    0% { transform: translateY(-20px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
-  }
-  @keyframes scale-in {
-    0% { transform: scale(0.9); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
-  }
-  
-  .animate-fade-in {
-    animation: fade-in 0.5s forwards;
-  }
-  .animate-fade-in-slide {
-    animation: fade-in-slide 0.5s forwards;
-  }
-  .animate-fade-in-scale {
-    animation: scale-in 0.5s forwards;
-  }
-`
-
