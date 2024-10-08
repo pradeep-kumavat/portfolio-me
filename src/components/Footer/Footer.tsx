@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { Github, Mail, Twitter } from 'lucide-react'
+import { Github, Mail, Twitter, Linkedin } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -35,6 +35,14 @@ export default function Footer() {
                 <Github className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
                 <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 -translate-y-2 bg-gray-800 text-white text-xs font-semibold py-1 px-2 rounded opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                   GitHub
+                </span>
+              </Link>
+            </div>
+            <div className="relative group">
+              <Link href="https://www.linkedin.com/in/pradeep-kumavat" target="_blank" rel="noopener noreferrer" className="relative block">
+                <Linkedin className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 -translate-y-2 bg-gray-800 text-white text-xs font-semibold py-1 px-2 rounded opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                  LinkedIn
                 </span>
               </Link>
             </div>

@@ -2,8 +2,10 @@
 
 import Image from 'next/image'
 import { ReactTyped } from 'react-typed'
+import { FlipWords } from '../ui/flip-words';
 
 export default function Hero() {
+  const words = ["Mern","FullStack","Nextjs"];
   return (
     <div className="bg-gray-950 text-white min-h-screen flex items-center">
       <style jsx>{`
@@ -54,7 +56,7 @@ export default function Hero() {
             <div 
               className="inline-block bg-[#E6B9A6] text-black font-semibold px-3 py-1 rounded-xl text-xs mb-4"
             >
-              A Fullstack Developer
+              A<FlipWords words={words} />Developer
             </div>
             <h1 
               className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight"

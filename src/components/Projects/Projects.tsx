@@ -4,6 +4,7 @@ import Image from "next/image"
 import React from "react"
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
 import Link from "next/link"
+import { Cover } from "@/components/ui/cover";
 
 const projectData = [
   {
@@ -19,16 +20,10 @@ const projectData = [
     link: "https://message-mate-z7wy.onrender.com/login",
   },
   {
-    title: "Virtual Reality Fitness App",
-    description: "An immersive VR experience that makes working out fun and engaging.",
-    image: "/placeholder.svg?height=1000&width=1000",
-    link: "https://vr-fitness.example.com",
-  },
-  {
-    title: "Blockchain-based Voting System",
-    description: "A secure and transparent digital voting platform using blockchain technology.",
-    image: "/placeholder.svg?height=1000&width=1000",
-    link: "https://blockchain-vote.example.com",
+    title: "AnonyMSG",
+    description: "It is anonymous messaging app where you can send message without revealing your identity.",
+    image: "",
+    link: "https://github.com/pradeep-kumavat/Anonymus-message",
   },
 ]
 
@@ -83,11 +78,15 @@ const Projects = () => {
   return (
     <section className="bg-gray-950 py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-white mb-4">My Projects</h2>
-        <p className="text-gray-400 mb-12 max-w-2xl">
-          Explore a collection of my recent projects, showcasing my skills in web development,
-          AI integration, and innovative problem-solving.
-        </p>
+        <div className="text-center max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-4">
+            <Cover>My Projects</Cover>
+          </h2>
+          <p className="text-gray-400 mb-12">
+            Explore a collection of my recent projects, showcasing my skills in web development,
+            AI integration, and innovative problem-solving.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectData.map((project, index) => (
             <ProjectCard key={index} project={project} />
