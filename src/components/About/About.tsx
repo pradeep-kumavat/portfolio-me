@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Lightbulb } from 'lucide-react';
 import Image from "next/image";
+import { RainbowButton } from "../ui/rainbow-button";
 
 export default function About() {
   return (
@@ -51,9 +52,7 @@ export default function About() {
             </div>
 
             <div className="pt-6 ">
-              <Button className="bg-[#E6B9A6] text-gray-900 hover:bg-[#d9a08e]">
-                <a className="flex items-center" href="/projects">View My Projects <ArrowRight className="ml-2 h-4 w-4 " /></a>
-              </Button>
+              <RainbowButton>View My Projects</RainbowButton>
             </div>
           </div>
         </div>
