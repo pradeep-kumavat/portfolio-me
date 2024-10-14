@@ -1,6 +1,5 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, Lightbulb } from 'lucide-react';
+import { Code, Lightbulb } from 'lucide-react';
 import Image from "next/image";
 import { RainbowButton } from "../ui/rainbow-button";
 
