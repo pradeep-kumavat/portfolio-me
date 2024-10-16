@@ -1,4 +1,5 @@
 import { render } from '@react-email/render';
+import Head from 'next/head';
 import React from 'react';
 
 interface ContactFormEmailProps {
@@ -10,11 +11,11 @@ interface ContactFormEmailProps {
 const ContactFormEmail: React.FC<ContactFormEmailProps> = ({ name, email, message }) => {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>New Contact Form Submission</title>
-      </head>
+      </Head>
       <body style={{
         fontFamily: 'Arial, sans-serif',
         lineHeight: 1.6,
@@ -30,7 +31,7 @@ const ContactFormEmail: React.FC<ContactFormEmailProps> = ({ name, email, messag
         }}>
           New Contact Form Submission
         </h1>
-        <p>You have received a new message from your Portfolio's contact form:</p>
+        <p>You have received a new message from your Portfolio&apos;s contact form:</p>
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
           <tbody>
             <tr>
@@ -54,7 +55,7 @@ const ContactFormEmail: React.FC<ContactFormEmailProps> = ({ name, email, messag
           {message}
         </p>
         <p style={{ fontSize: '0.8em', color: '#777', marginTop: '30px' }}>
-          This email was sent from your Portfolio's contact form. Please do not reply directly to this email.
+          This email was sent from your Portfolio&apos;s contact form. Please do not reply directly to this email.
         </p>
       </body>
     </html>
