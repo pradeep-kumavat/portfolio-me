@@ -32,9 +32,9 @@ export async function POST(req:NextRequest) {
         data: info
     });
 
-} catch (error: any) {
-    return NextResponse.json({error: error.message}, {status: 500})
+} catch (error: unknown) {
+    const errorMessage ='An unknown error occurred';
+    return NextResponse.json({error: errorMessage}, {status: 500})
 }
-
 }
 

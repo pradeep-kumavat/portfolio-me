@@ -2,6 +2,7 @@
 import { Code, Lightbulb } from 'lucide-react';
 import Image from "next/image";
 import { RainbowButton } from "../ui/rainbow-button";
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -51,7 +52,7 @@ export default function About() {
             </div>
 
             <div className="pt-6 ">
-              <RainbowButton>View My Projects</RainbowButton>
+                <Link href='/projects'><RainbowButton>View my projects</RainbowButton></Link>
             </div>
           </div>
         </div>
