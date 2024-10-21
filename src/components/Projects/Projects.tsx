@@ -1,35 +1,11 @@
 "use client";
-
 import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import { Cover } from "@/components/ui/cover";
 import { ExternalLink, Github } from "lucide-react"; // Importing Lucide icons
-
-const projectData = [
-  {
-    title: "Brainwave",
-    description: "It is a modern frontend design for a website.",
-    image: "/images/work-4.png",
-    liveLink: "https://brainwave-pradeep-react.netlify.app/",
-    githubLink: "https://github.com/pradeepkumavat/brainwave",
-  },
-  {
-    title: "Message Mate",
-    description: "Built a Real-time Chat Application with Socket.IO for low-latency communication.",
-    image: "/images/work-5.png",
-    liveLink: "https://message-mate-z7wy.onrender.com/login",
-    githubLink: "https://github.com/pradeep-kumavat/Message-Mate"
-  },
-  {
-    title: "ImageDown",
-    description: "It is a SAAS application that provides compressed videos and images and generate captions with the use of AI",
-    image: "/images/work-2.png",
-    liveLink: "https://github.com/pradeep-kumavat/ImageDown",
-    githubLink: "https://github.com/pradeep-kumavat/ImageDown"
-  },
-];
+import {projectData} from "@/constants/data";
 
 interface Project {
   title: string;
