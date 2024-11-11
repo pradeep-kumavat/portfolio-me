@@ -71,7 +71,7 @@ export const projectData = [
   },
   {
     title: "Healthiva",
-    description: "It is a SAAS application that gives you the ability to track application status and apointment with the doctor.",
+    description: "It is a SAAS application that gives you the ability to track application status and appointment with the doctor.",
     image: "/images/work-3.png",
     liveLink: "https://image-down.vercel.app/sign-in",
     githubLink: "https://github.com/pradeep-kumavat/ImageDown"
