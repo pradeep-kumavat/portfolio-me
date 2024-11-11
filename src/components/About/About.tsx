@@ -44,7 +44,6 @@ export default function About() {
                 <ul className="list-disc list-inside text-gray-300 space-y-2">
                   <li>Responsive and mobile-first web design</li>
                   <li>Custom web application development</li>
-                  <li>UI/UX design and prototyping</li>
                   <li>Performance optimization and SEO</li>
                   <li>Ongoing maintenance and support</li>
                 </ul>
