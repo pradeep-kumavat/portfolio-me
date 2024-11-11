@@ -5,7 +5,15 @@ import {
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-
+import { Josefin_Sans } from "next/font/google";
+const josefinSans = Josefin_Sans({
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  variable: "--font-josefin-sans",
+});
+const styles = {
+  fontFamily: `${josefinSans.variable}, sans-serif`,
+};
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
@@ -35,6 +43,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div
       className="w-full bg-gray-950 dark:bg-neutral-950 font-sans md:px-10 relative"
       ref={containerRef}
+      style={styles}
 
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
