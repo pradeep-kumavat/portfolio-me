@@ -64,7 +64,7 @@ export const projectData = [
   },
   {
     title: "ImageDown",
-    description: "It is a SAAS application that provides compressed videos and images and generate captions with the use of AI",
+    description: "It is a SAAS application that provides compressed videos and images and generate captions with the use of AI.",
     image: "/images/work-3.png",
     liveLink: "https://image-down.vercel.app/sign-in",
     githubLink: "https://github.com/pradeep-kumavat/ImageDown"
