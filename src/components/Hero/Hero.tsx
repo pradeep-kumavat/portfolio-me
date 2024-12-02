@@ -84,7 +84,7 @@ export default function Hero() {
           </div>
 
           <div className="relative flex justify-center">
-            <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-96 lg:h-96 mx-auto transition-transform transform hover:scale-105 animate-float">
+            <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-96 lg:h-96 mx-auto transition-transform transform hover:scale-105">
               <Image
                 src="/images/background-image.jpg" 
                 alt="Profile Avatar"
