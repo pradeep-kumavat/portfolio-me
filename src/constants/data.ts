@@ -73,8 +73,15 @@ export const projectData = [
     title: "Healthiva",
     description: "It is a SAAS application that gives you the ability to track application status and appointment with the doctor.",
     image: "/images/work-3.png",
-    liveLink: "https://image-down.vercel.app/sign-in",
-    githubLink: "https://github.com/pradeep-kumavat/ImageDown"
+    liveLink: "https://github.com/pradeep-kumavat/Healthivaa",
+    githubLink: "https://github.com/pradeep-kumavat/Healthivaa"
+  },
+  {
+    title: "Club Management Tool",
+    description: "It is a management application that helps to manage the club members and their activities.",
+    image: "/images/work-3.png",
+    liveLink: "https://github.com/Abhyudaya-SVVV/club-manage",
+    githubLink: "https://github.com/Abhyudaya-SVVV/club-manage"
   },
 ];
 
