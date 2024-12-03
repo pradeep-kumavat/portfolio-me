@@ -9,13 +9,20 @@ export default function About() {
     <div className="bg-gray-950 min-h-screen text-white py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
-          <div className="w-full lg:w-1/3 reveal">
+          <div className="w-full lg:w-1/3 reveal items-center border border-[#E6B9A6] rounded-full">
             <Image
-              src="/images/background-image.jpg"
+              src="/images/about-photo-2.png"
               alt="Pradeep Kumavat"
-              width={500}
-              height={500}
-              className="rounded-lg shadow-2xl w-full h-auto object-cover"
+              width={1000}
+              height={1000}
+              className="rounded-lg w-full h-auto object-cover bg-gray-950"
+            />
+            <Image
+              src="/images/about-photo.png"
+              alt="Pradeep Kumavat"
+              width={1000}
+              height={1000}
+              className="rounded-lg w-full h-auto object-cover bg-gray-950"
             />
           </div>
 
