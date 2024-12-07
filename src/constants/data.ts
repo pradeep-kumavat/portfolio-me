@@ -72,7 +72,7 @@ export const projectData = [
   {
     title: "Healthiva",
     description: "It is a SAAS application that gives you the ability to track application status and appointment with the doctor.",
-    image: "/images/work-3.png",
+    image: "/images/work-4.png",
     liveLink: "https://github.com/pradeep-kumavat/Healthivaa",
     githubLink: "https://github.com/pradeep-kumavat/Healthivaa"
   },
