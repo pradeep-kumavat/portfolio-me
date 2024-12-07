@@ -54,34 +54,42 @@ export const projectData = [
     image: "/images/work-1.png",
     liveLink: "https://brainwave-pradeep-react.netlify.app/",
     githubLink: "https://github.com/pradeepkumavat/brainwave",
+    technologies: ["Reactjs", "Tailwind CSS"]
   },
   {
     title: "Message Mate",
     description: "Built a Real-time Chat Application with Socket.IO for low-latency communication.",
     image: "/images/work-2.png",
     liveLink: "https://message-mate-z7wy.onrender.com/login",
-    githubLink: "https://github.com/pradeep-kumavat/Message-Mate"
+    githubLink: "https://github.com/pradeep-kumavat/Message-Mate",
+    technologies: ["Reactjs", "Nodejs", "Socket.IO", "MongoDB"]
+
   },
   {
     title: "ImageDown",
     description: "It is a SAAS application that provides compressed videos and images and generate captions with the use of AI.",
     image: "/images/work-3.png",
     liveLink: "https://image-down.vercel.app/sign-in",
-    githubLink: "https://github.com/pradeep-kumavat/ImageDown"
+    githubLink: "https://github.com/pradeep-kumavat/ImageDown",
+    technologies: ["Next.js", "TypeScript", "PostgreSQL","Prisma"]
+
   },
   {
     title: "Healthiva",
     description: "It is a SAAS application that gives you the ability to track application status and appointment with the doctor.",
     image: "/images/work-4.png",
     liveLink: "https://github.com/pradeep-kumavat/Healthivaa",
-    githubLink: "https://github.com/pradeep-kumavat/Healthivaa"
+    githubLink: "https://github.com/pradeep-kumavat/Healthivaa",
+    technologies: ["Next.js", "TypeScript" ,"MongoDB","Sentry"]
+
   },
   {
     title: "Club Management Tool",
     description: "It is a management application that helps to manage the club members and their activities.",
-    image: "/images/work-3.png",
+    image: "/images/work-5.png",
     liveLink: "https://github.com/Abhyudaya-SVVV/club-manage",
-    githubLink: "https://github.com/Abhyudaya-SVVV/club-manage"
+    githubLink: "https://github.com/Abhyudaya-SVVV/club-manage",
+    technologies: ["Next.js", "Nodejs", "MongoDB"]
   },
 ];
 

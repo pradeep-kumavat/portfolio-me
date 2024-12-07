@@ -13,6 +13,7 @@ interface Project {
   image: string;
   liveLink?: string;
   githubLink: string;
+  technologies?: string[];
 }
 
 const ProjectCard = ({ project }: { project: Project }) => (
@@ -40,7 +41,19 @@ const ProjectCard = ({ project }: { project: Project }) => (
           alt={project.title}
         />
       </CardItem>
-      <div className="flex justify-between items-center mt-8">
+      <CardItem translateZ="100" className="w-full mt-4">
+      <div className="flex flex-wrap gap-2 ">
+        {project.technologies && project.technologies.map((tech, index) => (
+          <span
+            key={index}
+            className="bg-gray-800 text-gray-300 px-2 py-1 rounded-full text-xs"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+      </CardItem>
+      <div className="flex justify-between items-center mt-6">
         <CardItem translateZ={20} className="flex space-x-4">
           {project.liveLink && (
             <Link href={project.liveLink} target="_blank">
