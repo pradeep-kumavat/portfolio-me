@@ -75,12 +75,12 @@ export const projectData = [
 
   },
   {
-    title: "Healthiva",
+    title: "Ivaa",
     description: "It is a SAAS application that gives you the ability to track application status and appointment with the doctor.",
     image: "/images/work-4.png",
     liveLink: "https://github.com/pradeep-kumavat/Healthivaa",
     githubLink: "https://github.com/pradeep-kumavat/Healthivaa",
-    technologies: ["Next.js", "TypeScript" ,"MongoDB","Sentry"]
+    technologies: ["Next.js", "TypeScript" ,"Appwrite","Sentry"]
 
   },
   {
