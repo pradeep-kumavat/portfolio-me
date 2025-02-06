@@ -26,6 +26,7 @@
     "nodemailer": "^6.9.15",
     "react": "^18",
     "react-dom": "^18",
+    "react-github-calendar": "^4.5.5",
     "react-hot-toast": "^2.4.1",
     "react-typed": "^2.0.12",
     "scrollreveal": "^4.0.9",

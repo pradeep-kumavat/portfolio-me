@@ -1,5 +1,6 @@
 import About from '@/components/About/About'
 import Hero from '@/components/Hero/Hero'
+import GithubGraph from '@/components/GithubGraph/GithubGraph'
 
 export const metadata = {
   title: {
@@ -15,6 +16,7 @@ export default function Home() {
     <div>
         <Hero />
         <About />
+        <GithubGraph />
     </div>
   )
 }
