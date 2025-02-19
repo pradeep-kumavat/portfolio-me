@@ -91,5 +91,13 @@ export const projectData = [
     githubLink: "https://github.com/Abhyudaya-SVVV/club-manage",
     technologies: ["Next.js", "Nodejs", "MongoDB"]
   },
+  {
+    title: "RepurSale",
+    description: "It is a  application that used to keep track of the sales and purchase of the products.",
+    image: "/images/work-6.png",
+    liveLink: "https://github.com/pradeep-kumavat/repursale",
+    githubLink: "https://github.com/pradeep-kumavat/repursale",
+    technologies: ["Next.js","TaiwindCSS", "MongoDB"]
+  },
 ];
 
