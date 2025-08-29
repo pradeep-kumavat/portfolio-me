@@ -3,6 +3,7 @@ import "./globals.css";
 import { Josefin_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import Chatbot from "@/components/ChatBot/chat";
 import { useState, useEffect } from "react"
 
 
@@ -44,6 +45,7 @@ export default function RootLayout({
             <Navbar />
             <main className="flex-grow">
               {children}
+              <Chatbot />
             </main>
             <Footer />
           </div>

@@ -1,0 +1,154 @@
+{
+  "bio": {
+    "name": "Pradeep Kumavat",
+    "role": "Fullstack Developer | MERN & Next.js",
+    "summary": "I am a 21-year-old B.Tech CSE student at SVVV with expertise in the MERN stack and Next.js. I build scalable applications, AI-integrated platforms, and developer tools.",
+    "location": "Indore Madhya Pradesh India",
+    "email": "pradeepkumavat108@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/pradeep-kumavat/",
+    "github": "https://github.com/pradeep-kumavat"
+  },
+  "personality": {
+    "tone": "Friendly, approachable, and enthusiastic",
+    "communicationStyle": "Explains concepts clearly with real-world examples, avoids jargon unless necessary, and stays concise yet helpful",
+    "behavior": "Collaborative, curious, always open to learning, and enjoys solving problems",
+    "strengths": [
+      "Adaptable and quick learner",
+      "Strong problem-solving mindset",
+      "Balances technical depth with creativity",
+      "Enjoys mentoring and helping others grow"
+    ],
+    "interests": [
+      "Exploring new frameworks and tools",
+      "AI and automation",
+      "Open-source contributions",
+      "Designing user-friendly applications"
+    ],
+    "quirks": [
+      "Adds a personal touch when explaining work",
+      "Loves clean, minimal design and code",
+      "Enjoys experimenting with animations and UI polish"
+    ]
+  },
+  "education": [
+    {
+      "institution": "Shri Vaishnav Vidyapeeth Vishwavidyalaya (SVVV)",
+      "degree": "B.Tech in Computer Science and Engineering",
+      "startDate": "2022-08-12",
+      "endDate": "2026-06-30",
+      "location": "Indore, Madhya Pradesh, India"
+    }
+  ],
+  "experience": [
+    {
+      "organization": "Abhyudaya Coding Club",
+      "role": "Nextjs Developer",
+      "startDate": "2024-09-20",
+      "endDate": "2025-06-30",
+      "description": "Worked on coding projects, mentored juniors, and contributed to technical initiatives within the club."
+    },
+    {
+      "organization": "Sandarsh Media Club",
+      "role": "Head of Graphic Department",
+      "startDate": "2023-08-01",
+      "endDate": "2025-08-30",
+      "description": "Covered university events, designed posters and thumbnails, produced documentaries, and contributed to creative projects."
+    }
+  ],
+    "skills": [
+      {
+        "name": "Programming Languages",
+        "skills": [
+          { "name": "C++", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+          { "name": "Java", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+          { "name": "JavaScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+          { "name": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+          { "name": "Python", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+        ]
+      },
+      {
+        "name": "Full Stack Development",
+        "skills": [
+          { "name": "ReactJS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+          { "name": "NodeJS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+          { "name": "NextJS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+          { "name": "Tailwind", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" },
+          { "name": "Bootstrap", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+          { "name": "SASS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" }
+        ]
+      },
+      {
+        "name": "Database",
+        "skills": [
+          { "name": "MongoDB", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+          { "name": "MySQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
+        ]
+      },
+      {
+        "name": "DevOps",
+        "skills": [
+          { "name": "Docker", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+          { "name": "Kubernetes", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" }
+        ]
+      },
+      {
+        "name": "Tools",
+        "skills": [
+          { "name": "Git", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+          { "name": "Github", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+          { "name": "VS Code", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Brainwave",
+        "description": "A modern frontend design for a website with smooth animations and interactive elements.",
+        "image": "/images/work-1.png",
+        "liveLink": "https://brainwave-pradeep-react.netlify.app/",
+        "githubLink": "https://github.com/pradeepkumavat/brainwave",
+        "technologies": ["Reactjs", "Tailwind CSS"]
+      },
+      {
+        "title": "Message Mate",
+        "description": "Real-time chat application built with Socket.IO for low-latency communication.",
+        "image": "/images/work-2.png",
+        "liveLink": "https://message-mate-z7wy.onrender.com/login",
+        "githubLink": "https://github.com/pradeep-kumavat/Message-Mate",
+        "technologies": ["Reactjs", "Nodejs", "Socket.IO", "MongoDB"]
+      },
+      {
+        "title": "ImageDown",
+        "description": "SAAS application that compresses videos/images and generates AI captions.",
+        "image": "/images/work-3.png",
+        "liveLink": "https://image-down.vercel.app/sign-in",
+        "githubLink": "https://github.com/pradeep-kumavat/ImageDown",
+        "technologies": ["Next.js", "TypeScript", "PostgreSQL", "Prisma"]
+      },
+      {
+        "title": "Ivaa",
+        "description": "SAAS platform to track application status and doctor appointments.",
+        "image": "/images/work-4.png",
+        "liveLink": "https://ivaa.vercel.app/",
+        "githubLink": "https://github.com/pradeep-kumavat/Healthivaa",
+        "technologies": ["Next.js", "TypeScript", "Appwrite", "Sentry"]
+      },
+      {
+        "title": "Club Management Tool",
+        "description": "Management application to handle club members and activities.",
+        "image": "/images/work-5.png",
+        "liveLink": "https://github.com/Abhyudaya-SVVV/club-manage",
+        "githubLink": "https://github.com/Abhyudaya-SVVV/club-manage",
+        "technologies": ["Next.js", "Nodejs", "MongoDB"]
+      },
+      {
+        "title": "RepurSale",
+        "description": "Web app to track sales and purchases of products.",
+        "image": "/images/work-6.png",
+        "liveLink": "https://github.com/pradeep-kumavat/repursale",
+        "githubLink": "https://github.com/pradeep-kumavat/repursale",
+        "technologies": ["Next.js", "TaiwindCSS", "MongoDB"]
+      }
+    ]
+  }
+  
